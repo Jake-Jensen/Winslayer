@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34227.203
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fumino Winslayer", "Fumino Winslayer.csproj", "{FCB2FA5D-628C-43DC-933E-D8509EB80A8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB2FA5D-628C-43DC-933E-D8509EB80A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB2FA5D-628C-43DC-933E-D8509EB80A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB2FA5D-628C-43DC-933E-D8509EB80A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB2FA5D-628C-43DC-933E-D8509EB80A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76057A5F-B3EE-4BDD-8815-D2DCDD149E24}
+	EndGlobalSection
+EndGlobal

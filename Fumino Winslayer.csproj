@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Fumino_Winslayer</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AutoIncrementRevision>true</AutoIncrementRevision>
+	<SignAssembly>False</SignAssembly>
+	<Title>Winslayer</Title>
+	<Company>Sapphirelabs</Company>
+	<Copyright>2023 Jake Jensen</Copyright>
+	<PackageIcon>Fumino.jpg</PackageIcon>
+	<IncludeSymbols>True</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<ApplicationIcon>Fumino.ico</ApplicationIcon>
+	<PlatformTarget>x64</PlatformTarget>
+	<AssemblyVersion>1.0.31.1922</AssemblyVersion>
+	<FileVersion>1.0.31.1922</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Fumino.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Pictures\Fumino.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="3.12.0" />
+    <PackageReference Include="Discord.Net.Core" Version="3.12.0" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
