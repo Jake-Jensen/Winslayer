@@ -56,7 +56,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0-rc.2.23479.6, )",
+              "version": "[8.0.0, )",
               "autoReferenced": true
             },
             "System.ServiceProcess.ServiceController": {
@@ -78,19 +78,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.0-rc.2.23480.2, 8.0.0-rc.2.23480.2]"
+              "version": "[8.0.0, 8.0.0]"
             },
             {
               "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-              "version": "[8.0.0-rc.2.23479.6, 8.0.0-rc.2.23479.6]"
+              "version": "[8.0.0, 8.0.0]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.0-rc.2.23479.6, 8.0.0-rc.2.23479.6]"
+              "version": "[8.0.0, 8.0.0]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.0-rc.2.23479.10, 8.0.0-rc.2.23479.10]"
+              "version": "[8.0.0, 8.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

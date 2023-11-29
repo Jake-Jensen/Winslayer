@@ -215,6 +215,22 @@ namespace Fumino_Winslayer {
             } 
         }
 
+        public static string GetDriveInfo() {
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            // Create a string to store the output
+            string output = "";
+            // Loop through each drive and get its capacity
+            foreach (DriveInfo drive in allDrives) {
+                if (drive.IsReady) {
+                    // Convert bytes to terabytes using a double constant for division
+                    double totalCapacityTB = (double)drive.TotalSize / (1024.0 * 1024 * 1024 * 1024);
+                    // Append the drive information to the output string
+                    output += $"{drive.Name}:\\ {totalCapacityTB:F3} TB\n";
+                }
+            }
+            return output;
+        }
+
         public static async Task MessageHandler(SocketMessage Message, DiscordSocketClient Client) {
             // Do nothing if it's just the bot talking, or other bots.
             if (Message.Author.Id == Client.CurrentUser.Id || Message.Author.IsBot) {
@@ -272,10 +288,10 @@ namespace Fumino_Winslayer {
 
             // No mention support for this one. Something broke and it refuses to execute correctly.
             if (MessageContentLowered.StartsWith(Prefix + "execute")) {
-                await Execute(); return;
+                _ = Execute(); return;
             }
             if (HasBeenMentioned && MessageContentLowered.Contains("execute")) {
-                await Execute(); return;
+                _ = Execute(); return;
             }
 
             if (MessageContentLowered.StartsWith(Prefix + "updatenickname")) {
@@ -324,6 +340,15 @@ namespace Fumino_Winslayer {
             }
             if (HasBeenMentioned && MessageContentLowered.Contains("scan")) {
                 await Scan(); return;
+            }
+
+            if (MessageContentLowered.StartsWith(Prefix + "drives")) {
+                await GMessage.Channel.SendMessageAsync("Current drive information: \n" + GetDriveInfo());
+                return;
+            }
+            if (HasBeenMentioned && MessageContentLowered.Contains("drives")) {
+                await GMessage.Channel.SendMessageAsync("Current drive information: \n" + GetDriveInfo());
+                return;
             }
         }
     }

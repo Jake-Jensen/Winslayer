@@ -132,7 +132,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0-rc.2.23479.6": {
+      "Microsoft.NET.ILLink.Tasks/8.0.0": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -401,7 +401,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.0-rc.2.23479.6": {
+      "Microsoft.NET.ILLink.Tasks/8.0.0": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -688,10 +688,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.0-rc.2.23479.6": {
-      "sha512": "neRDuxVI/tdf5yz/rLyD1kP3DkWx8uHTvb1wcqbjDn4QQDHmYHwcuHBnVVPYtBzMFmlVNmJMa91weUEhHx2z5A==",
+    "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "sha512": "B3etT5XQ2nlWkZGO2m/ytDYrOmSsQG1XNBaM6ZYlX5Ch/tDrMFadr0/mK6gjZwaQc55g+5+WZMw4Cz3m8VEF7g==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.0-rc.2.23479.6",
+      "path": "microsoft.net.illink.tasks/8.0.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -705,7 +705,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.0-rc.2.23479.6.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -994,7 +994,7 @@
     "net8.0": [
       "Discord.Net >= 3.12.0",
       "Discord.Net.Core >= 3.12.0",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.0-rc.2.23479.6",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.0",
       "System.ServiceProcess.ServiceController >= 8.0.0"
     ]
   },
@@ -1054,7 +1054,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.0-rc.2.23479.6, )",
+            "version": "[8.0.0, )",
             "autoReferenced": true
           },
           "System.ServiceProcess.ServiceController": {
@@ -1076,19 +1076,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[8.0.0-rc.2.23480.2, 8.0.0-rc.2.23480.2]"
+            "version": "[8.0.0, 8.0.0]"
           },
           {
             "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-            "version": "[8.0.0-rc.2.23479.6, 8.0.0-rc.2.23479.6]"
+            "version": "[8.0.0, 8.0.0]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[8.0.0-rc.2.23479.6, 8.0.0-rc.2.23479.6]"
+            "version": "[8.0.0, 8.0.0]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[8.0.0-rc.2.23479.10, 8.0.0-rc.2.23479.10]"
+            "version": "[8.0.0, 8.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -1096,7 +1096,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
