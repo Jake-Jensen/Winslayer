@@ -225,7 +225,7 @@ namespace Fumino_Winslayer {
                     // Convert bytes to terabytes using a double constant for division
                     double totalCapacityTB = (double)drive.TotalSize / (1024.0 * 1024 * 1024 * 1024);
                     // Append the drive information to the output string
-                    output += $"{drive.Name}:\\ {totalCapacityTB:F3} TB\n";
+                    output += $"{drive.Name}\\: {totalCapacityTB:F3} TB\n";
                 }
             }
             return output;

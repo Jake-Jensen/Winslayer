@@ -16,8 +16,8 @@
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<ApplicationIcon>Fumino.ico</ApplicationIcon>
 	<PlatformTarget>x64</PlatformTarget>
-	<AssemblyVersion>1.0.35.1533</AssemblyVersion>
-	<FileVersion>1.0.35.1533</FileVersion>
+	<AssemblyVersion>1.0.37.1543</AssemblyVersion>
+	<FileVersion>1.0.37.1543</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
